@@ -10,7 +10,6 @@ jobs:
 
       - name: Build
         run: |
-          npm ci
           npm run build-gh-pages
 
       - name: Deploy
