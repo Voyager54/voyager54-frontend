@@ -1,0 +1,3 @@
+.mod-text.mod-text--outlined {
+  -webkit-text-stroke: 1px var(--mod-color--text);
+}

@@ -1,0 +1,17 @@
+{
+  "name": "voyager54-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build-gh-pages": "vite build --base=/Voyager54/voyager54-frontend/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.9.5"
+  },
+  "dependencies": {
+    "@fontsource/raleway": "^4.5.8"
+  }
+}

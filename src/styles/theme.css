@@ -1,0 +1,13 @@
+:root {
+  --mod-color--background: #000000;
+  --mod-color--primary: #970045;
+  --mod-color--text: #ffffff;
+}
+
+:root {
+  --mod-font--default: "RalewayVariable", "Raleway", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    "Helvetica Neue", sans-serif;
+
+  --mod-transition--default: 0.2s ease-in-out;
+}

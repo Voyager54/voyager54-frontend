@@ -1,0 +1,51 @@
+@import "/node_modules/@fontsource/raleway/variable.css";
+
+@import "/src/styles/theme.css";
+
+@import "/src/styles/mod-components/overview.css";
+@import "/src/styles/mod-components/text.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  isolation: isolate;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1.5;
+  font-family: var(--mod-font--default);
+  background-color: var(--mod-color--background);
+  overflow: hidden auto;
+  color: var(--mod-color--text);
+}
+
+img {
+  width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.loaded #app {
+  opacity: 1 !important;
+  transition: var(--mod-transition--default);
+}
