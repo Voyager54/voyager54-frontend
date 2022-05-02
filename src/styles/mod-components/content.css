@@ -1,0 +1,31 @@
+.mod-content {
+  width: 100%;
+}
+
+.mod-content--section {
+  grid-column: 2;
+  display: flex;
+  flex-flow: column;
+  align-items: start;
+  margin-bottom: 50px;
+}
+.mod-content--section-center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.mod-content--hero {
+  display: grid;
+  grid-template-columns: 1fr min(100ch, calc(100% - 68px)) 1fr;
+  grid-column-gap: 34px;
+  height: 500px;
+  min-height: 70vh;
+  margin-bottom: 0px;
+}
+
+.mod-content--article {
+  display: grid;
+  grid-template-columns: 1fr min(60ch, calc(100% - 68px)) 1fr;
+  grid-column-gap: 34px;
+}

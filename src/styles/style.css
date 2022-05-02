@@ -3,7 +3,9 @@
 @import "/src/styles/theme.css";
 
 @import "/src/styles/mod-components/overview.css";
+@import "/src/styles/mod-components/header.css";
 @import "/src/styles/mod-components/text.css";
+@import "/src/styles/mod-components/content.css";
 
 *,
 *::before,
@@ -11,6 +13,8 @@
   box-sizing: border-box;
   margin: 0;
   -webkit-font-smoothing: antialiased;
+  font-feature-settings: "lnum";
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #app {
@@ -18,6 +22,7 @@
   width: 100%;
   height: 100%;
   min-height: 100%;
+  transition: opacity var(--mod-transition--default);
 }
 
 html,
@@ -47,5 +52,8 @@ h6 {
 
 .loaded #app {
   opacity: 1 !important;
-  transition: var(--mod-transition--default);
+}
+
+a {
+  text-decoration: none;
 }

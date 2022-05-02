@@ -82,12 +82,16 @@
   opacity: 0;
   pointer-events: none;
   z-index: -1;
-  transition: opacity var(--mod-transition--default);
+  transition: opacity var(--mod-transition--default),
+    transform var(--mod-transition--default);
+  transform: scale(1.01);
+  user-select: none;
 }
 
 .mod-overview--link-container:hover .mod-overview--hover,
 .mod-overview--link-container:focus .mod-overview--hover {
   opacity: 1;
+  transform: scale(1);
 }
 
 .mod-overview--hover img {

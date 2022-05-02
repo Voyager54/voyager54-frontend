@@ -1,3 +1,27 @@
 .mod-text.mod-text--outlined {
   -webkit-text-stroke: 1px var(--mod-color--text);
 }
+.mod-text.mod-text--transparent {
+  color: transparent;
+}
+.mod-text.mod-text--large {
+  font-size: clamp(1rem, 5rem, 8vw);
+}
+.mod-text.mod-text--tagline {
+  letter-spacing: 0.25em;
+  font-weight: 900;
+}
+
+.mod-text.mod-text--uppercase {
+  text-transform: uppercase;
+}
+
+.mod-text.mod-text--hoverSolid {
+  color: transparent;
+  transition: var(--mod-transition--default);
+}
+
+.mod-text.mod-text--hoverSolid:hover {
+  color: var(--mod-color--text);
+  transform: scale(1.01);
+}
