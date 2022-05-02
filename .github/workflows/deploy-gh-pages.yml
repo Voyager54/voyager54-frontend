@@ -15,7 +15,7 @@ jobs:
       - name: Upload Artifacts
         uses: actions/upload-artifact@v1
         with:
-          name: site
+          name: Voyager51-frontend-dist
           path: build
 
   deploy:
@@ -23,17 +23,17 @@ jobs:
     needs: [build]
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v3
 
       - name: Download Artifacts
         uses: actions/download-artifact@v1
         with:
-          name: site
+          name: Voyager51-frontend-dist
 
-      - name: Deploy 🚀
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: gh-pages
-          folder: dist
-          token: ${{ secrets.GH_ACCESS_VOYAGERSITE }}The deployment folder should match the name of the artifact. Even though our project builds into the 'build' folder the artifact name of 'site' must be placed here.
+          folder: Voyager51-frontend-dist
+          token: ${{ secrets.GH_ACCESS_VOYAGERSITE }}
