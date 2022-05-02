@@ -16,7 +16,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: site
-          path: build
+          path: dist
 
   deploy:
     concurrency: ci-${{ github.ref }}
@@ -36,4 +36,4 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
-          token: ${{ secrets.GH_ACCESS_VOYAGERSITE }}The deployment folder should match the name of the artifact. Even though our project builds into the 'build' folder the artifact name of 'site' must be placed here.
+          token: ${{ secrets.GH_ACCESS_VOYAGERSITE }}
