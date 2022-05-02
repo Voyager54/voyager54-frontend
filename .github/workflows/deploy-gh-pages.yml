@@ -18,4 +18,4 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
-          ACCESS_TOKEN: ${{ secrets.GH_ACCESS_VOYAGERSITE }}
+          token: ${{ secrets.GH_ACCESS_VOYAGERSITE }}
