@@ -1,0 +1,20 @@
+.mod-footer {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--mod-color--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  margin-top: 1rem;
+  font-size: smaller;
+}
+.mod-footer > img {
+  margin-top: 0.5rem;
+  width: 200px;
+}
+
+.mod-footer a {
+  text-decoration: underline;
+  color: var(--mod-color--text);
+}
