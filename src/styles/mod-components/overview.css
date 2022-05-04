@@ -100,3 +100,6 @@
   object-fit: cover;
   object-position: center;
 }
+.mod-overview--hover img[data-pos="left"] {
+  object-position: 5% 50%;
+}
