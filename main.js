@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector("body").classList.add("loaded");
   }, 250);
 });
+setInterval(() => {
+  document.querySelector("body").classList.add("loaded");
+}, 1500);
 
 document.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", (e) => {
