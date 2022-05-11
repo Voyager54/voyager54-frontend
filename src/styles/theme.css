@@ -9,5 +9,6 @@
     BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
     "Helvetica Neue", sans-serif;
 
-  --mod-transition--default: 0.2s ease-in-out;
+  --mod-easing--default: cubic-bezier(0, 0.42, 0.2, 0.99);
+  --mod-transition--default: 0.2s ease;
 }
